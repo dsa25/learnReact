@@ -1,16 +1,15 @@
 const PostItem = (props) => {
-    console.log(props);
-    return (
-      <div className="post">
-        <div className="post__content">
-          <strong>
-            {props.post.id} {props.post.title}
-          </strong>
-          <div>{props.post.body}</div>
-        </div>
-        <button>delete</button>
+  return (
+    <div className="post">
+      <div className="post__content">
+        <strong>
+          {props.number} {props.post.title}
+        </strong>
+        <div>{props.post.body}</div>
       </div>
-    )
+      <button onClick={() => props.remove(props.post)}>delete</button>
+    </div>
+  )
 }
 
 export default PostItem
