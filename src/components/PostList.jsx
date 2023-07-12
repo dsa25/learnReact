@@ -1,7 +1,6 @@
 import PostItem from "./PostItem"
 
 const PostList = ({ posts, title, remove }) => {
-
   if (!posts.length) {
     return <div style={{ textAlign: "center" }}>Посты не найдены</div>
   }
