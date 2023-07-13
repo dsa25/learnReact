@@ -1,0 +1,26 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.pagination span{
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+    color: teal;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.pagination span.active{
+    color: orange;
+    cursor: default;
+}
+.pagination span:hover:not(.active){
+    color: red;
+}
