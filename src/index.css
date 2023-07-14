@@ -64,6 +64,28 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+header{
+  background-color: #e0dddd;
+}
+header .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+nav {
+  margin-left: auto;
+}
+nav a{
+  display: inline-block;
+  margin-left: 15px;
+}
+nav a:hover:not(.active){
+  color: red;
+}
+nav a.active{
+  color: green;
+}
 
 .post{
   display: flex;
@@ -73,4 +95,9 @@ button:focus-visible {
   margin-top: 15px;
   border-radius: 3px;
   padding: 15px;
+}
+
+.wr_btns{
+  display: flex;
+  align-items: center;
 }
