@@ -26,6 +26,12 @@ function Navbar() {
           >
             posts
           </NavLink>
+          <NavLink
+            to="/postsscrollload"
+            className={({ isActive }) => (isActive ? " active" : "")}
+          >
+            postsScrollLoad
+          </NavLink>
           <Link onClick={logout}>Выйти</Link>
         </>
       ) : (

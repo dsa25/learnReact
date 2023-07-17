@@ -4,6 +4,7 @@ import { Route, Routes, Navigate } from "react-router-dom"
 // import { routes } from "@/router"
 
 import Posts from "@/pages/Posts"
+import PostsScrollLoad from "@/pages/PostsScrollLoad"
 import PostIdPage from "@/pages/PostIdPage"
 import About from "@/pages/About"
 import Error from "@/pages/Error"
@@ -33,6 +34,7 @@ function AppRouter() {
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Posts />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/postsscrollload" element={<PostsScrollLoad />} />
           <Route path="/posts/:idPost" element={<PostIdPage />} />
           <Route path="/login" element={<Navigate to="/posts" />} />
         </>
